@@ -120,7 +120,7 @@ print(conn.execute(""" SELECT * FROM PRODUCTS """).fetchall())
 
 # modify more than one value
 conn.execute("""
-             UPDATE products SET quantity = quantity + 50, price = 1.23 WHERE name = 'Pen Red
+             UPDATE products SET quantity = quantity + 50, price = 1.23 WHERE name = 'Pen Red'
              """)
 print(conn.execute(""" SELECT * FROM PRODUCTS """).fetchall())
 
