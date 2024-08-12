@@ -22,14 +22,18 @@ mydb = mysql.connector.connect(
     password='abcD123$'
 )
 '''
-# connect using configuration file
-mysql_conf_file_location = 'D:/localmts/pycodes/my.conf'
-mydb = mysql.connector.connect(option_files=mysql_conf_file_location)
+
 mycursor = mydb.cursor()
 
 # create a new database
 
 mycursor.execute('create database if not exists ntestdb')
+
+# connect using configuration file
+mysql_conf_file_location = 'D:/localmts/pycodes/my.conf'
+mydb = mysql.connector.connect(option_files=mysql_conf_file_location)
+mycursor = mydb.cursor()
+
 
 # create a table in the database
 mycursor.execute(
