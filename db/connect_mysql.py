@@ -157,7 +157,7 @@ insert_many_category_data = [
 
 cursor.executemany(insert_many_category_sql, insert_many_category_data)  # insert categories into the category table
 
-insert_many_potst_sql = "insert into post(title, content, category_id) value(%s, %s, %s, %s)"
+insert_many_potst_sql = "insert into post(title, content, category_id) value(%s, %s, %s)"
 
 insert_many_potst_data = [
     ('title 2', 'content 2', datetime.now().date(), 1),
