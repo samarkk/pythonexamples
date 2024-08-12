@@ -4,7 +4,8 @@
 # and in mysql execute
 # source <world.sql location>
 
-# pip3 install mysql-connector to get the mysql package
+# pip3 install mysql-connector-python to get the mysql package
+# with just mysql-connector will get  Authentication plugin 'caching_sha2_password' is not supported
 
 import mysql.connector
 from mysql.connector import errors, errorcode
