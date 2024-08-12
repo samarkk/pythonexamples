@@ -19,7 +19,7 @@ connect specifying parameters
 mydb = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='abcd'
+    password='abcD123$'
 )
 '''
 # connect using configuration file
