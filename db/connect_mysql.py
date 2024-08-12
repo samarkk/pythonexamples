@@ -157,9 +157,9 @@ insert_many_category_data = [
 
 cursor.executemany(insert_many_category_sql, insert_many_category_data)  # insert categories into the category table
 
-insert_many_potst_sql = "insert into post(title, content, category_id) value(%s, %s, %s)"
+insert_many_posts_sql = "insert into post(title, content, category_id) value(%s, %s, %s)"
 
-insert_many_potst_data = [
+insert_many_posts_data = [
     ('title 2', 'content 2', datetime.now().date(), 1),
     ('title 3', 'content 3', datetime.now().date(), 1),
     ('title 4', 'content 4', datetime.now().date(), 1),
@@ -167,7 +167,7 @@ insert_many_potst_data = [
     ('title 6', 'content 6', datetime.now().date(), 1),
 ]
 
-cursor.executemany(insert_many_potst_sql, insert_many_potst_data)
+cursor.executemany(insert_many_posts_sql, insert_many_posts_data)
 mydb.commit()  # commit the changes
 
 # update a single row
