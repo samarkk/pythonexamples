@@ -4,6 +4,8 @@
 # and in mysql execute
 # source <world.sql location>
 
+# pip3 install mysql-connector to get the mysql package
+
 import mysql.connector
 from mysql.connector import errors, errorcode
 from collections import OrderedDict
